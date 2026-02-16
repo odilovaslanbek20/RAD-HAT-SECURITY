@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Google Sans Code";
+}
+
+.web-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .bg-font {
-  background-image: url("/photo1.jpeg");
+  background-image: url("../public/images.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip: border-box;
+  background-clip: content-box;
+  backdrop-filter: initial;
+}
+
+@media (min-width: 1440px) {
+  .web-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
