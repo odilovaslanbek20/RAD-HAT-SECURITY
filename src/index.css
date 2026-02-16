@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ef4444, #9333ea);
+  border-radius: 10px;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,14 +27,6 @@ body {
   width: 90%;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.bg-font {
-  background-image: url("../public/images.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-clip: content-box;
-  backdrop-filter: initial;
 }
 
 @media (min-width: 1440px) {
